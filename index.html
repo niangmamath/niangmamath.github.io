@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Mamath</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleDescription(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur mon portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#profile">Profil</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#experience">Expérience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="profile" class="profile">
+        <img src="images/foto.jpg" alt="Photo de Mamath">
+        <h2>Mamath Yacine Niang</h2>
+        <p>Élève ingénieur généraliste à l'École Centrale Casablanca</p>
+        <p>Email: <a href="mailto:niangmamathyacine@gmail.com">niangmamathyacine@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/niangmamath" target="_blank">https://github.com/niangmamath</a></p>
+    </section>
+    <section id="skills" class="skills">
+        <h2>Compétences</h2>
+        <ul>
+            <li>Programmation en Python</li>
+            <li>Développement web (HTML, CSS, JavaScript)</li>
+            <li>Gestion de projet</li>
+            <li>Programmation orienté objet</li>
+            <li>Bon sens de l'organisation</li>
+            <li>Machine learning et IA Gen </li>
+        </ul>
+    </section>
+    <section id="projects" class="projects">
+        <h2>Projets</h2>
+        <div class="project-item">
+            <h3>Projet 1: Projet de TIPE (2023-2024)</h3>
+            <button onclick="toggleDescription('desc1')">Description</button>
+            <p id="desc1" style="display: none;">
+                
+                Ce projet porte sur l'étude comparative de deux générations de boissons énergétiques destinées aux sportifs. L'objectif est de déterminer l'impact des modifications de composition de ces boissons sur la performance sportive. Pour ce faire, nous avons analysé les ingrédients clés, les effets physiologiques et les résultats obtenus lors de tests de performance. Cette étude vise à fournir des recommandations pour optimiser la formulation des boissons énergétiques afin d'améliorer les performances des athlètes.</p>
+        </div>
+        <div class="project-item">
+            <h3>Projet 2: Projet Learning By Doing</h3>
+            <button onclick="toggleDescription('desc2')">Description</button>
+            <p id="desc2" style="display: none;">
+                Dans le cadre de notre première année à l'École Centrale Casablanca, nous avons réalisé un projet sur le thème de l'énergie et de l'environnement. Intitulé **Hybridia-Enr**, ce projet aborde la problématique de l'intermittence des énergies renouvelables. Nous avons développé un système hybride combinant l'énergie solaire et éolienne, associé à un dispositif de stockage innovant utilisant des briques d'argile. De plus, nous avons conçu une application permettant aux utilisateurs de contrôler leur consommation énergétique et de basculer entre les sources d'énergie solaire et éolienne en fonction des conditions météorologiques.
+                
+                 </p>
+        </div>
+        <div class="project-item">
+            <h3>Projet 3: Coding Week</h3>
+            <button onclick="toggleDescription('desc3')">Description</button>
+            <p id="desc3" style="display: none;">Ce projet, réalisé sur une semaine, avait pour objectif d'appliquer le machine learning dans le domaine de la santé. Nous avons développé une application capable de prédire le cancer du col de l'utérus. Grâce à des algorithmes avancés, cette application analyse les données médicales pour fournir des prédictions précises, aidant ainsi à la détection précoce et à la prise en charge rapide de cette maladie.</p>
+        </div>
+    </section>
+    <section id="experience" class="experience">
+        <h2>Expérience</h2>
+        <div class="experience-item">
+            <h3>2018 - Président du gouvernement scolaire du collège de Gainte Kaye</h3>
+            <p>J'ai appris à diriger et à gérer des personnes ayant des parcours et des points de vue différents. Cette expérience m'a également permis de développer des compétences en résolution de conflits et en prise de décision stratégique.</p>
+        </div>
+        <div class="experience-item">
+            <h3>2019 - Chargé de la communication du gouvernement scolaire</h3>
+            <p> J'ai pu développer mes compétences en communication et en relations interpersonnelles.</p>
+        </div>
+        <div class="experience-item">
+            <h3>2020-2022 - Délégué de classe</h3>
+            <p>J'ai créé des relations sincères avec mes camarades et d'autres élèves de mon lycée. Cette expérience m'a également aidé à améliorer mes compétences en négociation et en organisation d'événements scolaires </p>
+        </div>
+        <div class="experience-item">
+            <h3>Depuis 2019 - Président de l'association religieuse AND LIGUEYEUL BAYE NIASS</h3>
+            <p>Nous menons des activités sociales telles que des journées d'assainissement et organisons des cérémonies religieuses. De plus, j'ai développé des compétences en leadership communautaire et en gestion de bénévoles.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Expérience en agriculture</h3>
+            <p>J'ai aidé mes parents dans les champs pendant les vacances, ce qui m'a permis d'acquérir de nombreuses connaissances dans ce domaine. Cette expérience m'a également appris la gestion des ressources naturelles et la planification des cultures.</p>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:niangmamathyacine@gmail.com">niangmamathyacine@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/niangmamath" target="_blank">https://github.com/niangmamath</a></p>
+        <p>Téléphone: <a href="tel:+2120783346308">+212 0783346308</a></p>
+    </section>
+    <footer>
+        <p>copyright 2025 Mamath Yacine Niang</p>
+    </footer>
+</body>
+</html>
+
